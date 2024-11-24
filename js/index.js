@@ -84,7 +84,7 @@ document.getElementById("login1").innerHTML="All data are required"
 }
 else{
  for(i=0;i<usersData.length;i++){
-if(usersData[i].email.toLowerCase()!=userEmail.value.toLowerCase()&&
+if(usersData[i].email.toLowerCase()!=userEmail.value.toLowerCase()||
 usersData[i].password.toLowerCase()!=userPassword.value.toLowerCase()){
 document.getElementById("login2").innerHTML="email or password is not correct"
 }
