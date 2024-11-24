@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <!-- fontaesome -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- main style -->
+  <link rel="stylesheet" href="css/style.css" />
+  <body>
+    <div class="container text-center my-5">
+      <div class="login-form shadow p-5 mx-auto">
+        <h1 class="mb-4">Smart Login System</h1>
+        <div class="name">
+          <input
+            oninput="validate(this)"
+            id="name"
+            type="name"
+            name="name"
+            class="form-control bg-transparent my-3"
+            placeholder="Enter your name"
+          />
+          <div class="text-danger my-2 d-none">
+              name is not valid
+        </div>
+        </div>
+    <div class="email">
+        <input
+        oninput="validate(this)"
+        id="email"
+        type="email"
+        name="email"
+        class="form-control bg-transparent my-3"
+        placeholder="Enter your email"
+      />
+      <div class="text-danger my-2 d-none">
+       email is not valid
+      </div>
+   <div class="pass">
+</div>
+<input
+  oninput="validate(this)"
+  id="password"
+  type="password"
+  name="password"
+  class="form-control bg-transparent"
+  placeholder="Enter your password"
+/> 
+<div class="text-danger my-2 d-none">
+  password is not valid
+  </div>
+   </div>
+        <button id="login" class="btn btn-outline-info my-4 d-none">
+          Login
+        </button>
+        <div class="text-success my-2 d-none">Success</div>
+        <button id="signup" class="btn btn-outline-info my-4">Sign Up</button>
+        <p class="text-white">
+          You have an account? <a href="index.html">log in</a>
+        </p>
+      </div>
+    </div>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- main js -->
+    <script src="js/index.js"></script>
+  </body>
+</html>

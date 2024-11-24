@@ -1,0 +1,17 @@
+nav,body{
+    background-color: #24353f !important;
+      font-family: "Titillium Web", sans-serif;  
+}
+nav,.welcome{  box-shadow: 0 5px 50px 0px black !important;
+
+}
+nav a{
+    font-size: 20px;
+
+}
+.data{
+    height: 300px;
+}
+.welcome{
+    font-size: 40px;
+}
