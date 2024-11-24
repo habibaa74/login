@@ -9,11 +9,10 @@ if (localStorage.getItem("users") == null) {
   usersData = JSON.parse(localStorage.getItem("users"));
   document
 }
-var existing;
 function emailexisit(){
     for(i=0;i<usersData.length;i++){
         if(usersData[i].email.toLowerCase()==userEmail.value.toLowerCase()){
-            return existing
+            return true
         }
     }
 }
@@ -33,7 +32,7 @@ var user={
 if(userName.value==""||userEmail.value==""||userPassword.value==""){
     alert("All data required")
 }
-else if(emailexisit()==existing){
+else if(emailexisit()==true){
     alert("email is already exisit")
 }
 else if(userName.classList.contains("is-valid")&&
